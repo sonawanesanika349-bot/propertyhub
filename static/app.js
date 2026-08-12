@@ -1,0 +1,1 @@
+function filterCards(){let q=(document.getElementById("q").value||"").toLowerCase(),t=document.getElementById("t").value||"";document.querySelectorAll(".pc").forEach(x=>x.style.display=(!q||x.dataset.loc.includes(q))&&(!t||x.dataset.type===t)?"block":"none")}setTimeout(()=>document.querySelectorAll(".flash").forEach(x=>x.remove()),3000);
